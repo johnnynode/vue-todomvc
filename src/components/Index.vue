@@ -1,17 +1,16 @@
 <template>
-  <div class="hi">
+  <div class="index">
     <h1>{{ msg }}</h1>
-    <!-- 注意这里父路由不可少 -->
-    <router-view></router-view>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Hi',
+  name: 'Index',
   data () {
     return {
-      msg: 'Hi page'
+      msg: 'Index page'
     }
   }
 }
