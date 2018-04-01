@@ -7,6 +7,7 @@
       <router-link to="/hi/hi1">Hi1子页面</router-link> |
       <router-link to="/hi/hi2">Hi2子页面</router-link>
     </div>
+    <p>{{$route.name}}</p>
     <router-view/>
   </div>
 </template>

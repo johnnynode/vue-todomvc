@@ -18,8 +18,9 @@ export default new Router({
       path: '/hi',
       component: Hi,
       children: [
-        {path: '/hi/hi1', component: Hi1},
-        {path: '/hi/hi2', component: Hi2}
+        {path: '/', name: 'Index/Hi', component: Hi},
+        {path: '/hi/hi1', name: 'Index/Hi/Hi1', component: Hi1},
+        {path: '/hi/hi2', name: 'Index/Hi/Hi2', component: Hi2}
       ]
     }
   ]
