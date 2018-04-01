@@ -4,7 +4,8 @@
     <div>
       <router-link to="/">首页</router-link> |
       <router-link to="/hi">Hi页面</router-link> |
-      <router-link to="/hi/hi1">Hi1子页面</router-link> |
+      <!-- 绑定对象的值 -->
+      <router-link :to="{name:'Hi1',params:{id:333,name:'Joh'}}">Hi1子页面</router-link> |
       <router-link to="/hi/hi2">Hi2子页面</router-link>
     </div>
     <p>{{$route.name}}</p>
